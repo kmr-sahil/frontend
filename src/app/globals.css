@@ -17,10 +17,10 @@
   }
 
   .title-primary {
-    @apply text-[1.5rem] md:text-[2rem] font-bold text-center leading-tight py-[1rem] md:py-[2rem] bg-gradient-to-tl from-[#67696e] via-[#131313] to-[#131313] bg-clip-text text-transparent;
+    @apply text-[1.2rem] md:text-[1.4rem] font-medium text-center leading-tight py-[1rem] md:py-[2rem] bg-gradient-to-tl from-[#67696e] via-[#131313] to-[#131313] bg-clip-text text-transparent;
   }
 
   .title-sub {
-    @apply text-[12px] md:text-[1rem] font-light tracking-tight leading-tight text-center;
+    @apply text-[14px] md:text-[18px] font-light tracking-tight leading-tight text-center;
   }
 }

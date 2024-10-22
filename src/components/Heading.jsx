@@ -12,7 +12,7 @@ export default function AnimatedHeading() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 2500);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, []);

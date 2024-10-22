@@ -2,13 +2,15 @@ import React from "react";
 import Image from "next/image";
 
 const Step = ({ number, title, description }) => (
-  <div className="w-[100%] px-[1rem] py-[1.5rem] rounded-[16px] outline outline-[6px] outline-[#D1D4D5] flex flex-col items-center justify-start gap-[0.5rem] ">
-    <div className="bg-[#D1D4D5] rounded-full p-[0.5rem]">
-      <div className="bg-gradient-to-br from-[#131313] via-[#41444B] to-[#131313] rounded-full w-[40px] h-[40px] text-[20px] font-bold text-white text-center flex items-center justify-center">
+  <div className="w-[100%] px-[1rem] md:px-[1.5rem] py-[1.5rem] rounded-[16px] outline outline-[6px] outline-[#f4f4f4] flex flex-col items-center justify-start gap-[0.5rem] bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e646] bg-opacity-60 shadow-[inset_0_6px_15px_0px_rgba(0,0,0,0.05)]">
+    <div className="bg-[#e9e7e7] rounded-full p-[0.5rem] bg-opacity-40">
+      <div className="bg-gradient-to-br from-[#fff] via-[#e9e7e7] to-[#fff] rounded-full w-[40px] h-[40px] text-[20px] font-bold text-[#131313] text-center flex items-center justify-center">
         {number}
       </div>
     </div>
-    <h3 className="text-[1.5rem] md:text-[2rem] font-bold mt-[0.75rem]">{title}</h3>
+    <h3 className="text-[1.5rem] md:text-[32px] font-medium mt-[0.75rem]">
+      {title}
+    </h3>
     <p className="title-sub">{description}</p>
   </div>
 );
@@ -22,17 +24,17 @@ function Process() {
         <Step
           number="1"
           title="Discover"
-          description="We dive deep into your business goals, analyze your industry landscape, and understand your target audience to craft a personalized tech solution that fits perfectly."
+          description="We assess your goals, study your industry, and understand your audience to design a custom tech solution."
         />
         <Step
           number="2"
           title="Create"
-          description="Our team of experts creates visually compelling designs and robust, scalable systems to ensure your website or platform stands out and performs seamlessly."
+          description="Our team crafts engaging designs and scalable systems to ensure a standout, high-performance platform."
         />
         <Step
           number="3"
           title="Deliver"
-          description="We deliver your project with precision and provide continuous support to ensure everything runs smoothly. Your satisfaction drives our commitment to ongoing success."
+          description="We deliver with precision and provide ongoing support, ensuring everything works smoothly for your success."
         />
       </div>
     </div>

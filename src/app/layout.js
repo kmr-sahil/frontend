@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Head from "next/head"; // Import Head component
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +12,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        {/* Google Analytics tag */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2XF2KQB0E"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-H2XF2KQB0E');
+            `,
+          }}
+        />
+      </Head>
       <body
         className={inter.className}
         style={{ backgroundColor: "#F5F7F8", position: "relative", overflowX: "hidden" }}

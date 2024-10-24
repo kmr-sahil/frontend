@@ -6,9 +6,19 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  icons: {
+    icon: [
+      {
+        url: "/favicon.png", // /public path
+        href: "/favicon.png", // /public path
+      },
+    ],
+  },
   title: "Orus Studio",
   description: "#1 software solutions agency, providing top notch service from design to development and deployment",
 };
+
+
 
 export default function RootLayout({ children }) {
   return (

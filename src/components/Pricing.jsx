@@ -49,7 +49,7 @@ const PricingCard = ({
   features,
   pricingPeriod,
 }) => (
-  <div className="w-[100%] p-[1rem] md:p-[1.5rem] rounded-[16px] outline outline-[6px] outline-[#f4f4f4] flex flex-col justify-start items-start gap-[0.5rem] bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e656] shadow-[inset_0_6px_15px_0px_rgba(0,0,0,0.05)]">
+  <div className="w-[100%] p-[1rem] md:p-[1.5rem] rounded-[16px] outline outline-[6px] outline-[#f1f1f1] flex flex-col justify-start items-start gap-[0.5rem] bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e67c] shadow-[inset_0_6px_15px_0px_rgba(0,0,0,0.09)]">
     <div className="flex flex-col justify-start items-start gap-[0.5rem] bg-[#EBEBEB] bg-opacity-50 w-[100%] p-[1rem] rounded-[12px] mb-[1rem] shadow-[inset_0_-6px_15px_0px_rgba(0,0,0,0.05)]">
       <h1 className="font-bold text-[28px] md:text-[32px]">
         {price}
@@ -90,7 +90,7 @@ function Pricing() {
           features={monthlyFeatures}
         />
       </div>
-      <div className="w-[100%] p-[1rem] md:p-[1.5rem] rounded-[16px] outline outline-[#f4f4f4] flex flex-col justify-start items-start gap-[0.5rem] bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e656] shadow-[inset_0_6px_15px_0px_rgba(0,0,0,0.05)]">
+      <div className="w-[100%] p-[1rem] md:p-[1.5rem] rounded-[16px] outline outline-[#f1f1f1] flex flex-col justify-start items-start gap-[0.5rem] bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e67c] shadow-[inset_0_6px_15px_0px_rgba(0,0,0,0.09)]">
         <div className="w-[100%]">
           <h1 className="text-[20px] md:text-[2rem] font-medium text-start mb-[0.75rem]">
             Couldn&apos;t find a perfect plan?

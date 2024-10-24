@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const Step = ({ number, title, description }) => (
-  <div className="w-[100%] px-[1rem] md:px-[1.5rem] py-[1.5rem] rounded-[16px] outline outline-[6px] outline-[#f4f4f4] flex flex-col items-center justify-start gap-[0.5rem] bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e646] bg-opacity-60 shadow-[inset_0_6px_15px_0px_rgba(0,0,0,0.05)]">
+  <div className="w-[100%] px-[1rem] md:px-[1.5rem] py-[1.5rem] md:py-[2rem] rounded-[16px] outline outline-[6px] outline-[#f1f1f1] flex flex-col items-center justify-start gap-[0.5rem] bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e646] bg-opacity-60 shadow-[inset_0_6px_20px_0px_rgba(0,0,0,0.09)]">
     <div className="bg-[#e9e7e7] rounded-full p-[0.5rem] bg-opacity-40">
       <div className="bg-gradient-to-br from-[#fff] via-[#e9e7e7] to-[#fff] rounded-full w-[40px] h-[40px] text-[20px] font-bold text-[#131313] text-center flex items-center justify-center">
         {number}

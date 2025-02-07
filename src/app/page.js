@@ -41,7 +41,7 @@ function page() {
 
         <div className="bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e656] shadow-[inset_0_6px_15px_0px_rgba(0,0,0,0.075)] p-[1rem] rounded-[16px] flex items-center justify-center">
           <Link
-            href={"facebook.com"}
+            href={"https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Rwa1VyUevVLzniFjS9o_p_lYKagqz-QfVUUpLb0FQ4e1fmI4_IA2nzlSPBI5pZEQ8NQ-Q75TD"}
             className=" px-[1.5rem] py-[0.5rem] rounded-[8px] bg-gradient-to-br from-[#131313] via-[#41444B] to-[#131313] md:text-[1.25rem] font-medium text-white"
           >
             Book a free Call

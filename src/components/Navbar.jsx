@@ -45,7 +45,7 @@ function Navbar() {
               transition={{ duration: 0.2 }}
             >
               <Link
-                href="facebook.com"
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Rwa1VyUevVLzniFjS9o_p_lYKagqz-QfVUUpLb0FQ4e1fmI4_IA2nzlSPBI5pZEQ8NQ-Q75TD"
                 className="px-[1rem] py-[0.5rem] rounded-[8px] md:rounded-[12px] text-[1rem] md:text-[1.25rem] text-center bg-white font-medium whitespace-nowrap"
               >
                 Book a Call

@@ -15,7 +15,7 @@ function Navbar() {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     // Adjust this value based on your hero section height
-    const heroSectionHeight = 500;
+    const heroSectionHeight = 700;
     setShowBookCall(latest > heroSectionHeight);
   });
 

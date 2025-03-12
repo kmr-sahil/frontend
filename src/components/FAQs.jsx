@@ -83,7 +83,7 @@ If you require longer-term support, we also offer extended maintenance plans to 
           something great together
         </h1>
         <Link
-          href={"/"}
+          href={"https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Rwa1VyUevVLzniFjS9o_p_lYKagqz-QfVUUpLb0FQ4e1fmI4_IA2nzlSPBI5pZEQ8NQ-Q75TD"}
           className="text-[1rem] md:text-[1.25rem] leading-5 text-center rounded-[12px] bg-[#F5F7F8] text-[#41444B] font-medium py-[1rem] whitespace-nowrap"
         >
           Book a quick 15 min Call Now

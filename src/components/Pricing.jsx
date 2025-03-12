@@ -70,16 +70,20 @@ const PricingCard = ({
 function Pricing() {
   return (
     <section className="flex flex-col gap-[1.5rem]">
-      <h2 className="title-primary">Pricing</h2>
+      <h2 className="text-[0.8rem] bg-gradient-to-tl from-[#67696e] via-[#131313] to-[#131313] text-zinc-50 px-[1rem] py-[0.35rem] rounded-full mx-auto">
+        Pricing
+      </h2>
       <Balancer>
-        <p className="title-primary">Premium quality without the premium price tag.</p>
+        <p className="title-primary">
+          Premium quality without the premium price tag.
+        </p>
       </Balancer>
       <div className="flex flex-col sm:flex-row gap-[1.5rem] flex-grow">
         <PricingCard
           price="$219"
           pricingPeriod="/ month"
           description="Perfect for brand refresh & steady pace company"
-          link="/f"
+          link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Rwa1VyUevVLzniFjS9o_p_lYKagqz-QfVUUpLb0FQ4e1fmI4_IA2nzlSPBI5pZEQ8NQ-Q75TD"
           buttonText="Get Started Now"
           features={projectFeatures}
         />
@@ -87,8 +91,8 @@ function Pricing() {
           price="$XX"
           pricingPeriod="/ one-demand pricing"
           description="Ideally good for strategizing & scaling startups"
-          link="/f"
-          buttonText="Get Started Now"
+          link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Rwa1VyUevVLzniFjS9o_p_lYKagqz-QfVUUpLb0FQ4e1fmI4_IA2nzlSPBI5pZEQ8NQ-Q75TD"
+          buttonText="Get Custom Quote"
           features={monthlyFeatures}
         />
       </div>

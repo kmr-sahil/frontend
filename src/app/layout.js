@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         className={inter.className}
         style={{ backgroundColor: "#F5F7F8", position: "relative", overflowX: "hidden" }}
       >
-        {children}
+        <main className="overflow-x-hidden">{children}</main>
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-H2XF2KQB0E"

@@ -11,10 +11,12 @@ import Balancer from "react-wrap-balancer";
 import GridBackground from "@/components/Background";
 import TechStack from "@/components/TechStack";
 import AnimatedHeading from "@/components/Heading";
+import Services from "@/components/Services";
+import WhyUs from "@/components/WhyUs";
 
 function page() {
   return (
-    <div className="max-w-[40rem] md:max-w-[80rem] mx-auto p-[1.5rem] md:px-[4rem] flex flex-col justify-center items-center gap-[4rem] md:gap-[5rem] lg:gap-[6rem] text-[#41444B]">
+    <div className="max-w-[40rem] md:max-w-[80rem] mx-auto p-[1.5rem] md:px-[4rem] flex flex-col justify-center items-center gap-[4rem] md:gap-[5rem] lg:gap-[6rem] text-[#41444B] ">
       <div className="absolute top-0 right-0 w-screen -z-50">
         <GridBackground />
       </div>
@@ -25,23 +27,27 @@ function page() {
         <div className="absolute top-[1rem] w-[100%] h-[100%] bg-[#F5F7F8] rounded-full blur-2xl -z-10 "></div>
         <h1 className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-bold leading-[1.2] md:leading-[1.2] lg:leading-[1.2] text-center p-[0.25rem] bg-gradient-to-tl from-[#575a63] via-[#131313] to-[#131313] bg-clip-text text-transparent">
           <Balancer>
-            Crafting engaging websites with meaningful designs that{" "}
+            Your Full-Stack Creative Partner Here to Fulfill Every Creative
+            Demand
           </Balancer>
 
-          <AnimatedHeading />
+          {/* <AnimatedHeading /> */}
         </h1>
 
         <h3 className="text-[14px] md:text-[20px] font-light tracking-tight leading-tight text-center">
           <Balancer>
-            We work with startups, creatives, and visionaries. Through efficient
-            design, we create websites that excel as powerful sales engines,
-            fostering success, engagement, and growth.
+            We design, develop, and market ideas that are result-driven. From
+            stunning visuals to seamless tech solutions, we’re here to bring
+            your vision to life—one pixel, one line of code, and one brilliant
+            strategy at a time.
           </Balancer>
         </h3>
 
         <div className="bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e656] shadow-[inset_0_6px_15px_0px_rgba(0,0,0,0.075)] p-[1rem] rounded-[16px] flex items-center justify-center">
           <Link
-            href={"https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Rwa1VyUevVLzniFjS9o_p_lYKagqz-QfVUUpLb0FQ4e1fmI4_IA2nzlSPBI5pZEQ8NQ-Q75TD"}
+            href={
+              "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Rwa1VyUevVLzniFjS9o_p_lYKagqz-QfVUUpLb0FQ4e1fmI4_IA2nzlSPBI5pZEQ8NQ-Q75TD"
+            }
             className=" px-[1.5rem] py-[0.5rem] rounded-[8px] bg-gradient-to-br from-[#131313] via-[#41444B] to-[#131313] md:text-[1.25rem] font-medium text-white"
           >
             Book a free Call
@@ -49,11 +55,15 @@ function page() {
         </div>
       </section>
 
-      {/* <Work /> */}
+      <Work />
+
+      {/* <TechStack /> */}
+
+      <Services />
 
       <Process />
 
-      <TechStack />
+      <WhyUs />
 
       <Pricing />
 

@@ -12,7 +12,7 @@ export function GridBackground({
   strokeDasharray = 4,
   numSquares = 50,
   className,
-  maxOpacity = 0.030,
+  maxOpacity = 0.03,
   duration = 4,
   repeatDelay = 0,
   ...props
@@ -21,14 +21,15 @@ export function GridBackground({
   const containerRef = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [squares, setSquares] = useState(() => generateSquares(numSquares));
-  
+
   // Add iOS detection
   const [isIOS, setIsIOS] = useState(false);
 
   useEffect(() => {
     // Check for iOS
-    const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
-                       (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const isIOSDevice =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
     setIsIOS(isIOSDevice);
   }, []);
 
@@ -87,46 +88,39 @@ export function GridBackground({
   }, [containerRef]);
 
   const containerStyles = {
-    position: 'relative',
-    width: '100%',
-    backgroundColor: 'white',
-    isolation: 'isolate',
+    position: "relative",
+    width: "100%",
+    backgroundColor: "white",
+    isolation: "isolate",
     ...(isIOS && {
-      transform: 'translateZ(0)',
-      WebkitTransform: 'translateZ(0)',
-      backfaceVisibility: 'hidden',
-      WebkitBackfaceVisibility: 'hidden',
+      transform: "translateZ(0)",
+      WebkitTransform: "translateZ(0)",
+      backfaceVisibility: "hidden",
+      WebkitBackfaceVisibility: "hidden",
     }),
   };
 
   const svgContainerStyles = {
-    position: 'absolute',
+    position: "absolute",
     inset: 0,
-    height: '40rem',
-    overflow: 'hidden',
+    height: "40rem",
+    overflow: "hidden",
     ...(isIOS && {
-      transform: 'translate3d(0,0,0)',
-      WebkitTransform: 'translate3d(0,0,0)',
+      transform: "translate3d(0,0,0)",
+      WebkitTransform: "translate3d(0,0,0)",
     }),
   };
 
   return (
-    <div 
-      className={cn(className)} 
-      style={containerStyles}
-      {...props}
-    >
-      <div
-        ref={containerRef}
-        style={svgContainerStyles}
-      >
-        <svg 
+    <div className={cn(className)} style={containerStyles} {...props}>
+      <div ref={containerRef} style={svgContainerStyles}>
+        <svg
           className="w-full h-full"
           style={{
             ...(isIOS && {
-              transform: 'translate3d(0,0,0)',
-              WebkitTransform: 'translate3d(0,0,0)',
-            })
+              transform: "translate3d(0,0,0)",
+              WebkitTransform: "translate3d(0,0,0)",
+            }),
           }}
         >
           <defs>
@@ -145,9 +139,9 @@ export function GridBackground({
               />
             </pattern>
           </defs>
-          <rect 
-            width="100%" 
-            height="100%" 
+          <rect
+            width="100%"
+            height="100%"
             fill={`url(#${id}-pattern)`}
             style={{ opacity: isIOS ? 0.5 : 1 }}
           />
@@ -170,24 +164,24 @@ export function GridBackground({
                 ease: "easeInOut",
               }}
               onAnimationComplete={() => updateSquarePosition(id)}
-              style={isIOS ? { mixBlendMode: 'normal' } : {}}
+              style={isIOS ? { mixBlendMode: "normal" } : {}}
             />
           ))}
         </svg>
       </div>
       <div
         style={{
-          position: 'absolute',
+          position: "absolute",
           bottom: 0,
           left: 0,
           right: 0,
-          height: '5rem',
+          height: "5rem",
           zIndex: 1,
-          background: isIOS 
-            ? 'linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.001) 100%)'
-            : 'linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%)',
-          backdropFilter: 'none',
-          WebkitBackdropFilter: 'none',
+          background: isIOS
+            ? "linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.001) 100%)"
+            : "linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%)",
+          backdropFilter: "none",
+          WebkitBackdropFilter: "none",
         }}
       />
     </div>

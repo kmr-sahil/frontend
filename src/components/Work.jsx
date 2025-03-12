@@ -1,22 +1,22 @@
-"use client"
+"use client";
 
-import React, { useRef, useEffect } from 'react'
-import { motion, useAnimation, useInView } from 'framer-motion'
+import React, { useRef, useEffect } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 export default function Work() {
-  const containerRef = useRef(null)
-  const isInView = useInView(containerRef)
-  const controls = useAnimation()
+  const containerRef = useRef(null);
+  const isInView = useInView(containerRef);
+  const controls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
-      controls.start('animate')
+      controls.start("animate");
     } else {
-      controls.stop()
+      controls.stop();
     }
-  }, [isInView, controls])
+  }, [isInView, controls]);
 
-  const items = [1, 2, 3, 4, 5]
+  const items = [1, 2, 3, 4, 5];
 
   return (
     <div ref={containerRef} className="overflow-hidden">
@@ -40,12 +40,12 @@ export default function Work() {
         {[...items, ...items].map((item, index) => (
           <div
             key={index}
-            className="my-[0.5rem] flex-shrink-0 w-[30rem] h-[20rem] rounded-lg outline outline-[6px] outline-[#C8CBD0] flex items-center justify-center text-2xl"
+            className="my-[0.5rem] flex-shrink-0 w-[30rem] h-[20rem] rounded-lg outline outline-[6px] outline-[#c8cbd06e] flex items-center justify-center text-2xl"
           >
             {item}
           </div>
         ))}
       </motion.div>
     </div>
-  )
+  );
 }

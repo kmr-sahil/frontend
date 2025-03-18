@@ -73,11 +73,11 @@ function Pricing() {
       <h2 className="text-[0.8rem] bg-gradient-to-tl from-[#67696e] via-[#131313] to-[#131313] text-zinc-50 px-[1rem] py-[0.35rem] rounded-full mx-auto">
         Pricing
       </h2>
-      <Balancer>
+     
         <p className="title-primary">
-          Premium quality without the premium price tag.
+        <Balancer>Premium quality without the premium price tag.</Balancer>
         </p>
-      </Balancer>
+      
       <div className="flex flex-col sm:flex-row gap-[1.5rem] flex-grow">
         <PricingCard
           price="$219"

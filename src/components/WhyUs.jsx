@@ -6,17 +6,21 @@ const WhyUs = () => {
     <div className="flex flex-col items-center text-center gap-[1.5rem] mx-auto md:max-w-[80rem] py-[3rem]">
       {/* Introduction Section */}
       <div className="text-center">
-        <Balancer>
-          <h2 className="title">
+        <h2 className="title">
+          <Balancer>
+            {" "}
             We’re the Creative Partner You’ve Been Looking For
-          </h2>
-        </Balancer>
-        <Balancer>
-          <p className="title-primary pt-[2rem]">
-            We’re more than just an agency—we’re your collaborators,<br className="hidden md:block"></br>
+          </Balancer>
+        </h2>
+
+        <p className="title-primary pt-[2rem]">
+          <Balancer>
+            {" "}
+            We’re more than just an agency—we’re your collaborators,
+            <br className="hidden md:block"></br>
             problem-solvers, and growth enablers.
-          </p>
-        </Balancer>
+          </Balancer>
+        </p>
       </div>
 
       {/* Marquee Sections */}

@@ -6,35 +6,31 @@ import Link from "next/link";
 function FAQs() {
   const faqsData = [
     {
+      question: "Who's Behind the Team?",
+      answer: "We're a team of creative specialists, each excelling in their domain—marketing, frontend, DevOps, design, and engineering. Every member brings unique expertise to the table."
+    },
+    {
       question: "How Long Does a Project Take?",
-      answer: `The timeline for each project depends on the package you choose:
-
-$299 Basic Package: Typically takes 1-2 weeks. This includes 1 landing page and 4 custom pages with basic design and functionality, along with 1 round of revisions.
-
-$499 Professional Package: Usually completed within 2-4 weeks. This package includes up to 8 custom pages, advanced design, 2 rounds of revisions, and optional advanced features like SEO or blog setup.
-
-Custom Pricing Enterprise Package: The timeline for custom projects varies based on the complexity and scope. A typical enterprise-level project can take anywhere from 4-8 weeks or more, depending on the number of pages, features, and revisions required.
-
-We work closely with you throughout the process to ensure timely delivery without compromising quality.`,
+      answer: "The timeline depends on your selected plan and project scope. We keep you updated throughout the process to ensure transparency."
     },
     {
-      question: "Can I Request Additional Features After the Project Begins?",
-      answer:
-        "Yes, you can request additional features even after the project has started. However, any changes or additions outside of the agreed-upon scope may affect the timeline and cost. We&apos;ll evaluate your request and provide you with a clear estimate for any extra work before proceeding.",
+      question: "What If I Don't Like the Work?",
+      answer: "We offer unlimited revisions until you're satisfied. If you're still unhappy, we provide a refund."
     },
     {
-      question: "Do You Offer Support After the Website is Launched?",
-      answer:
-        `Absolutely! All of our packages include post-launch support:
-
-The $299 Basic Package includes 1 month of support for minor adjustments and bug fixes.
-The $499 Professional Package offers 1 month of support with ongoing assistance for any technical issues or updates.
-Our Custom Pricing Enterprise Package provides up to 6 months of ongoing support, ensuring your website stays up-to-date and runs smoothly.
-If you require longer-term support, we also offer extended maintenance plans to keep your website running optimally.`,
+      question: "Can I Get My Work Delivered Faster?",
+      answer: "Yes! We can speed up the timeline by involving more talent. We'll tailor it according to your budget."
     },
-    
-    // Add more FAQs here as needed
+    {
+      question: "Can I Request Additional Features Later?",
+      answer: "Yes, you can. However, adding features outside the initial scope may affect the timeline and cost. We'll provide an estimate before proceeding."
+    },
+    {
+      question: "Do You Offer Support After the Website Launch?",
+      answer: "Absolutely! All packages include post-launch support. For long-term maintenance, we offer extended plans."
+    }
   ];
+  
 
   const [selectedQuestion, setSelectedQuestion] = useState(null);
 

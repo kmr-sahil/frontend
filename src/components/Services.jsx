@@ -96,14 +96,15 @@ const MarqueeRightToLeft = () => {
 const Services = () => {
   return (
     <div className="flex flex-col items-center text-center gap-6 mx-auto md:max-w-6xl mt-[5rem] mb-[15rem]">
-      <Balancer>
-        <h2 className="title">Everything Creative, All in One Place</h2>
-      </Balancer>
-      <Balancer>
-        <p className="title-primary">
+      <h2 className="title">
+        <Balancer>Everything Creative, All in One Place</Balancer>
+      </h2>
+
+      <p className="title-primary">
+        <Balancer>
           We're your one-stop shop for all things creative and digital
-        </p>
-      </Balancer>
+        </Balancer>
+      </p>
 
       {/* Marquee Sections */}
       <div className="w-full space-y-10 sm:space-y-20 mt-[2rem]">

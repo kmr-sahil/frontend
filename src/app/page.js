@@ -14,6 +14,7 @@ import AnimatedHeading from "@/components/Heading";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 
+
 function page() {
   return (
     <div className="max-w-[40rem] md:max-w-[80rem] mx-auto p-[1.5rem] md:px-[4rem] flex flex-col justify-center items-center gap-[4rem] md:gap-[5rem] lg:gap-[6rem] text-[#41444B] ">

@@ -14,8 +14,8 @@ export const metadata = {
       },
     ],
   },
-  title: "Orus Studio",
-  description: "#1 software solutions agency, providing top notch service from design to development and deployment",
+  title: "Orus Studio | Fast & Reliable Software, App & Web Development Services",
+  description: "Orus Studio delivers custom software, mobile app, and web development services with blazing-fast turnaround, expert UI/UX design, agile methods, and full-stack deployment. Get your project built faster — let's build something exceptional.",
 };
 
 

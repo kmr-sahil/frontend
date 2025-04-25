@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaDribbble } from "react-icons/fa";
 import { SiMaildotru } from "react-icons/si";
+import { ShoppingBag } from "lucide-react";
 
 function Footer() {
   return (
@@ -16,24 +17,27 @@ function Footer() {
 
       <div className="flex flex-col sm:flex-row gap-[1rem] justify-between items-start mb-[1rem]">
         <div className="flex gap-[0.5rem] items-center justify-center">
-          <div className="px-[1rem] py-[0.5rem] bg-black rounded-md">
-            <Image src={"/orus.svg"} width={40} height={10} alt="logo" />
+          <div className="px-[1rem] py-[0.5rem] rounded-md">
+            <Image src={"/logo.svg"} width={20} height={10} alt="logo" className="invert" />
           </div>
 
           <h3 className="title-sub text-[14px]">
-            Sahil Kumar, designer & engineer
+            Orus Studio, Creative Agency
           </h3>
         </div>
 
         <div className="self-end gap-[0.75rem] flex justify-center items-center">
-          <Link href={"/"}>
+          {/* <Link href={"/"}>
             <FaXTwitter />
           </Link>
           <Link href={"/"}>
             <FaDribbble />
-          </Link>
+          </Link> */}
           <Link href={"/"}>
             <SiMaildotru />
+          </Link>
+          <Link href={"/shop"}>
+            <ShoppingBag width={18} height={18} />
           </Link>
         </div>
       </div>

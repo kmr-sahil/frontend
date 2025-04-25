@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TemplatesPage() {
   const templates = [
@@ -11,6 +12,14 @@ export default function TemplatesPage() {
       livelink: "https://waitlist-templates.vercel.app/template-1",
       price: "$9",
     },
+    {
+      title: "Portfolio Template",
+      desc: "Simple and elegant portfolio template for showcasing your work, built with Next.js and Tailwind CSS.",
+      images: ["/template-2/tn1.png", "/template-2/tn2.png", "/template-2/tn3.png"],
+      buylink: "#",
+      livelink: "https://waitlist-templates.vercel.app/template-1",
+      price: "$0 FREE",
+    },
    
   ];
 
@@ -20,7 +29,7 @@ export default function TemplatesPage() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex items-center">
             <div className="flex items-center">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-black">
+              <Link href={'/'} className="flex h-10 w-10 items-center justify-center rounded-lg bg-black">
                 <Image
                   src="/logo.svg"
                   width={60}
@@ -28,7 +37,7 @@ export default function TemplatesPage() {
                   alt="logo"
                   className="w-auto h-[1.4rem]"
                 />
-              </div>
+              </Link>
               <div className="ml-2 flex flex-col sm:flex-row items-start sm:items-center">
                 <span className="text-[1.1rem] font-semibold">Orus</span>
                 <span className="ml-1 rounded-md bg-gray-100 px-1.5 py-0.5 text-[0.6rem] sm:text-xs font-medium">
@@ -52,7 +61,7 @@ export default function TemplatesPage() {
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-gray-600">
           Modern and minimalist templates for building your next product. Built
-          with React, NextJS, TailwindCSS, Framer Motion, and TypeScript.
+          with React, NextJS, TailwindCSS, Framer Motion, and JavaScript.
         </p>
       </section>
 

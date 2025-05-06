@@ -70,7 +70,7 @@ function page() {
 
       <FAQs />
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

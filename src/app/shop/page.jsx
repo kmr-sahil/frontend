@@ -7,7 +7,7 @@ export default function TemplatesPage() {
     {
       title: "Waitlist Template",
       desc: "Liva a waitlist template with a modern & responsive design, built with Next.js and Tailwind CSS.",
-      images: ["/template-1/tn1.png", "/template-1/tn2.png", "/ai-saas-3.jpg"],
+      images: ["/template-1/tn3.png", "/template-1/tn1.png", "/template-1/tn2.png"],
       buylink: "#",
       livelink: "https://waitlist-templates.vercel.app/template-1",
       price: "$9",
@@ -56,9 +56,9 @@ export default function TemplatesPage() {
       </header>
 
       <section className="bg-[url('/grid-pattern.svg')] bg-center py-16 text-center">
-        <h1 className="text-4xl font-bold text-gray-900 md:text-5xl">
+        <h2 className="text-4xl font-bold text-gray-900 md:text-5xl">
           Templates
-        </h1>
+        </h2>
         <p className="mx-auto mt-4 max-w-2xl text-gray-600">
           Modern and minimalist templates for building your next product. Built
           with React, NextJS, TailwindCSS, Framer Motion, and JavaScript.

@@ -74,10 +74,10 @@ function FAQs() {
       </div>
 
       <div className="flex-grow md:max-w-[30rem] bg-gradient-to-bl from-[#131313] via-[#41444B] to-[#131313] text-white p-[1rem] md:p-[2rem] rounded-[16px] flex flex-col gap-[2rem]">
-        <h1 className="text-[1.25rem] lg:text-[2rem] font-medium leading-tight text-start">
+        <h2 className="text-[1.25rem] lg:text-[2rem] font-medium leading-tight text-start">
           We assure you of the best and quickest service with us. Let&apos;s make
           something great together
-        </h1>
+        </h2>
         <Link
           href={"https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1Rwa1VyUevVLzniFjS9o_p_lYKagqz-QfVUUpLb0FQ4e1fmI4_IA2nzlSPBI5pZEQ8NQ-Q75TD"}
           className="text-[1rem] md:text-[1.25rem] leading-5 text-center rounded-[12px] bg-[#F5F7F8] text-[#41444B] font-medium py-[1rem] whitespace-nowrap"

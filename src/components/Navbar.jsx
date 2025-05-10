@@ -28,14 +28,18 @@ function Navbar() {
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
         style={{ paddingLeft: showBookCall ? "1rem" : "" }}
       >
-        <div className="flex gap-2 items-center px-[1rem]"><Image
-          src="/logo.svg"
-          width={60}
-          height={20}
-          alt="logo"
-          className="w-auto h-4 md:h-[1.5rem]"
-        />
-        <h1 className="text-zinc-50 font-medium md:text-[1.2rem]">Orus</h1></div>
+        <div className="flex gap-2 items-center px-[1rem]">
+          <Image
+            src="/logo.svg"
+            width={60}
+            height={20}
+            alt="logo"
+            className="w-auto h-4 md:h-[1.5rem]"
+          />
+          <span className="text-zinc-50 font-medium md:text-[1.2rem]">
+            Orus
+          </span>
+        </div>
 
         <AnimatePresence>
           {showBookCall && (

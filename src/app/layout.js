@@ -5,6 +5,7 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// ✅ Define metadata for SEO
 export const metadata = {
   icons: {
     icon: [
@@ -14,21 +15,35 @@ export const metadata = {
       },
     ],
   },
-  title: "Orus Studio | Fast & Reliable Software, App & Web Development Services",
-  description: "Orus Studio delivers custom software, mobile app, and web development services with blazing-fast turnaround, expert UI/UX design, agile methods, and full-stack deployment. Get your project built faster — let's build something exceptional.",
+  title:
+    "Orus Studio | Fast & Reliable Software, App & Web Development Services",
+  description:
+    "Orus Studio delivers custom software, mobile app, and web development services with blazing-fast turnaround, expert UI/UX design, agile methods, and full-stack deployment. Get your project built faster — let's build something exceptional.",
+  keywords:
+    "web development, software development, mobile app development, UI/UX design, agile development, full-stack development, custom software solutions, fast turnaround, expert developers",
+  robots: "index, follow",
+  authors: [{ name: "Orus Studio" }],
+  openGraph: {
+    siteName: "Orus Studio",
+    url: "https://orus.studio/",
+    type: "website",
+    images: ["/favicon.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Orus Studio | Your All in one Creative Partner",
+    description:
+      "Find remote and onsite jobs in development, design, finance, and engineering. GetJobs.today helps job seekers connect with top employers.",
+    images: ["/favicon.png"],
+  },
 };
-
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <Head>
+      <Head>
         <title>{metadata.title}</title>
-        <meta
-          property="og:title"
-          content={metadata.title}
-        />
+        <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:site_name" content="Orus Studio" />
         <meta property="og:url" content="https://orus.studio/" />
@@ -38,7 +53,11 @@ export default function RootLayout({ children }) {
       </Head>
       <body
         className={inter.className}
-        style={{ backgroundColor: "#F5F7F8", position: "relative", overflowX: "hidden" }}
+        style={{
+          backgroundColor: "#F5F7F8",
+          position: "relative",
+          overflowX: "hidden",
+        }}
       >
         <main className="overflow-x-hidden">{children}</main>
         <Script

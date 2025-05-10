@@ -50,10 +50,10 @@ const PricingCard = ({
 }) => (
   <div className="w-[100%] p-[1rem] md:p-[1.5rem] rounded-[16px] sm:min-w-[15rem] lg:min-w-[32rem] outline outline-[6px] outline-[#f1f1f1] flex flex-col justify-start items-start gap-[0.5rem] bg-gradient-to-b from-[#f6f6f6] via-[#f6f6f6] to-[#e8e6e67c] shadow-[inset_0_6px_15px_0px_rgba(0,0,0,0.09)]">
     <div className="w-full min-h-[123px] flex flex-col justify-start items-start gap-[0.5rem] bg-[#EBEBEB] bg-opacity-50 p-[1rem] rounded-[12px] mb-[1rem] shadow-[inset_0_-6px_15px_0px_rgba(0,0,0,0.05)]">
-      <h1 className="font-bold text-[28px] md:text-[32px]">
+      <h4 className="font-bold text-[28px] md:text-[32px]">
         {price}
         <span className="title-sub"> {pricingPeriod}</span>
-      </h1>
+      </h4>
       <p className="title-sub text-start md:text-[14px]">{description}</p>
     </div>
     {/* <hr className="w-[100%] border-[1px] border-[#4b4141] mt-[0.5rem] mb-[0.75rem] opacity-50" /> */}
